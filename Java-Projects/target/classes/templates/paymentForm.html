@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Payment Form</title>
+</head>
+<body>
+    <h2>Make a Payment</h2>
+    <form action="#" th:action="@{/process-payment}" method="post">
+        <label for="userId">User ID:</label>
+        <input type="text" name="userId" required /><br/>
+        
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount" required /><br/>
+        
+        <button type="submit">Pay Now</button>
+    </form>
+</body>
+</html>
